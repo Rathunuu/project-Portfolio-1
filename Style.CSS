@@ -1,1 +1,159 @@
+/* Basic Reset */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8fc;
+    color: #222;
+}
+
+
+/* Header */
+
+header {
+    background-color: #0d47a1;
+    padding: 20px;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sections */
+
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/* About */
+
+#about {
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Skills */
+
+#skills ul {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+#skills li {
+    margin-bottom: 8px;
+}
+
+
+/* Projects Grid */
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#projects h2 {
+    grid-column: 1 / -1;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Contact */
+
+#contact a {
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d47a1;
+    color: white;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #about h1 {
+        font-size: 30px;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+}
